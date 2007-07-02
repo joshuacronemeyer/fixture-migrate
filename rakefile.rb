@@ -1,6 +1,7 @@
 task :default => [:test]
 task :cruise => [:test]
 task :test do |t|
-  test_files = FileList['*test*']
-	test_files.each{|file| system("ruby #{file}")}
-end or raise "Failures"
+				    exit 1
+#  test_files = FileList['*test*']
+#	test_files.each{|file| system("ruby #{file}")}
+end
