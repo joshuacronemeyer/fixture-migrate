@@ -18,6 +18,7 @@ namespace :db do
       migrator.delete_fixtures("#{RAILS_ROOT}/test/fixtures", deleted_tables)
     end
     
+    desc "Load test fixtures to the test db."
     task :load_to_test_db do
       migrator = MigrateFixtures.new
       #drop test db
