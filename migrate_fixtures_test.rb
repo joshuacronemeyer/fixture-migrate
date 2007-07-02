@@ -74,7 +74,7 @@ class MigrateFixturesTest < Test::Unit::TestCase
     @migrator.dump_database_to_fixtures(fixtures_path)
   end
 	def test_failure
-		flunk
+		not gonna work
 	end
 
 end
