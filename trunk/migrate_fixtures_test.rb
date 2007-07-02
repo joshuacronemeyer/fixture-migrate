@@ -73,7 +73,7 @@ class MigrateFixturesTest < Test::Unit::TestCase
     @migrator.expects(:gather_fixture_names).returns(["one", "two"])
     @migrator.dump_database_to_fixtures(fixtures_path)
   end
-	def flunk_test
+	def test_flunk
 		flunk
 	end
 end
