@@ -9,7 +9,9 @@ class MigrateFixturesTest < Test::Unit::TestCase
     @migrator = MigrateFixtures.new
     @yaml = {"two"=>{"name"=>"MyString", "id"=>"2"}, "one"=>{"name"=>"MyString", "id"=>"1"}}
   end
-  
+def test_fail
+  flunk("))<>((")
+end
   def test_gather_fixture_names_so_we_can_remember_what_the_fixtures_were_called
     name_hash = @migrator.gather_fixture_names("table_name", @yaml)
     assert_equal(@yaml.keys.first, name_hash["2"])
