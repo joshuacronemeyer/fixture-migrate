@@ -10,9 +10,9 @@ class MigrateFixturesTest < Test::Unit::TestCase
     @yaml = {"two"=>{"name"=>"MyString", "id"=>"2"}, "one"=>{"name"=>"MyString", "id"=>"1"}}
   end
 
-  def test_fail
-    flunk("))<<>>((")
-  end
+#def test_fail
+#    flunk("))<<>>((")
+#  end
 
   def test_gather_fixture_names_so_we_can_remember_what_the_fixtures_were_called
     name_hash = @migrator.gather_fixture_names("table_name", @yaml)
